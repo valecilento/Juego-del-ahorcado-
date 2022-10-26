@@ -37,7 +37,7 @@
     flex: 40%;
     justify-content: space-between;
     flex-direction: column;
-    text-align: center;  /* buscar como alinear los botones más abajo*/
+    text-align: center;  
 }
 #boton-iniciarjuego{
     font-size: larger;
@@ -159,8 +159,7 @@
 }
 
 
-/*responsive
-logo position: static;*/
+
 @media (max-width: 768px) {
 
     html, body{

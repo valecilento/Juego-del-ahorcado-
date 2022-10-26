@@ -33,8 +33,7 @@ function iniciarJuego(){
     dibujarAhorcado();
     letrasUsadas = [];
 
-// touch.event para el teclado del movil//
-    document.onkeydown = (e) =>{         // se puede usar el metodo addEventListener//
+    document.onkeydown = (e) =>{         
         let letra = e.key.toUpperCase();
         
         if(aciertos < palabraAleatoria.length && errores != 0 && comprobarLetra(letra, e.keyCode) && estadoJuego == true){
@@ -79,7 +78,7 @@ function guardarPalabra(){
     iniciarJuego()
 }
 
-//* el rango es por la tabla ascii//*
+
 function comprobarLetra(key,keyCode){
     let estado = false;
     if( keyCode >= 65 && keyCode <= 90){
@@ -140,7 +139,7 @@ function dibujarLetraDeLaPalabra(index){
     pincel.fillStyle = "#DD3388";
 
     let ancho = 600 / palabraAleatoria.length; 
-    pincel.fillText(palabraAleatoria[index], 130 + (ancho*index), 430); //(texto, x, y) //
+    pincel.fillText(palabraAleatoria[index], 130 + (ancho*index), 430); 
     pincel.stroke();
 }
 function dibujarLetrasIncorrectas(letra, errorsLeft){
@@ -150,7 +149,7 @@ function dibujarLetrasIncorrectas(letra, errorsLeft){
     pincel.lineCap   = "round";
     pincel.lineJoin  = "round";
     pincel.fillStyle = "#DD3388";
-    pincel.fillText (letra, 10 +(40 *(8 - errorsLeft)), 500, 30);   // (texto, x, y, maxWidth) 40 es el tamaño de la fuente//
+    pincel.fillText (letra, 10 +(40 *(8 - errorsLeft)), 500, 30);  
    
 }
 function escribirLetraIncorrecta(){
@@ -182,7 +181,7 @@ if (canvas.getContext) {
 }
 
 
-//Dibuja una parte del ahorcado segun los errores cometidos
+//*Dibuja una parte del ahorcado segun los errores cometidos
 function dibujarAhorcado(){
     if (canvas.getContext) {
         pincel.beginPath();
@@ -190,8 +189,7 @@ function dibujarAhorcado(){
         pincel.lineCap = "round";
         pincel.lineJoin = "round";
         pincel.fillStyle = "#black";
-        pincel.strokeStyle = "#black";
-        
+        pincel.strokeStyle = "#black";   
        
 
         if(errores == 7){
