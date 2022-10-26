@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="reset.css">
+        <title>Challenge 2</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@8.8.7/dist/sweetalert2.min.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <img id="logoAlura" src="imagenes/Vector.png" alt="Logo de Alura">
+                <a id="titulo">JUEGO DEL AHORCADO</a>
+            </div>
+            <div class="ahorcado">
+                <canvas id="horca" width="800" height ="500"></canvas>
+            </div>
+            <div class="buttons" id="boton-desaparece">
+                <a type="button" id="boton-iniciarjuego" onclick="iniciarJuego()">Iniciar juego </a>
+                <a type="button" id="boton-agregarpalabra" onclick="agregarPalabra()"> Agregar nueva palabra</a>  
+            </div>
+            <div class="buttons" id="botones-iniciar-juego">
+                <a type="button" id="boton-nuevojuego" onclick="iniciarJuego()">Nuevo juego</a>
+                <a type="button" id="boton-desistir" onclick="desistir()">Desistir</a>
+            </div>
+            <div class="panel" id="panelAgregaPalabra">
+                <textarea class="text-area" id="textoagregarpalabra" name="name" rows="8" cols="80" placeholder="Ingrese una palabra"></textarea> 
+            </div>         
+            <div class="caja" id="cajaAgregaPalabra">
+                <div class="textoysigno">
+                    <p id="textoinformativo"><img id="signoexclamacion" src="imagenes/signoadvertencia.png" alt="Signo de exclamación."> Máx. 8 letras.</p>
+                </div>
+                <div class="buttons">
+                    <a type="button" id="boton-guardar" onclick="guardarPalabra()">Guardar y empezar</a>
+                    <a type="button" id="boton-cancelar" onclick="cancelar()">Cancelar</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-footer">
+              <p>Creado por ValeriaDev</p>
+              <a href="https://www.linkedin.com/in/mar%C3%ADa-valeria-cilento/" target="_blank"><img src="imagenes/iconoLinkedin.svg" alt="logo de linkedin"></a>
+              <a href="https://github.com/valecilento" target="_blank"><img src="imagenes/iconoGithub.svg" alt="logo de github"></a>
+            </div>
+        </footer>
+    </body>
+    <script type="text/Javascript" src="script.js"></script>
+    <script src="sweetalert.js"></script>

@@ -1,0 +1,203 @@
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #E5E5E5;
+    width: 960px;
+    height: 650px;
+}
+.logo{
+    width: 100%;
+    padding: 10px 20px;
+    flex: 60%;
+    display: flex;
+    float: left;
+    position:absolute;
+}
+#logoAlura{
+    margin: auto;
+}
+#titulo{
+    flex: 60%;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 15px 0 15px 250px;
+}
+.ahorcado{
+    justify-content: center;
+    display: flex;
+}
+#horca{
+    display: none;
+    margin-top: 20px;
+}
+#buttons{
+    display: flex;
+    flex: 40%;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;  /* buscar como alinear los botones más abajo*/
+}
+#boton-iniciarjuego{
+    font-size: larger;
+    border-radius: 20px;
+    bottom: 230px;
+    width: 250px;
+    height: auto;
+    margin: auto 5% auto auto;
+    text-decoration-line: none;
+    padding: 19px;
+    background: #0A3871;
+    color:white; 
+}
+#boton-agregarpalabra{
+    font-size: larger;
+    border-radius: 20px;
+    bottom: 230px;
+    width: 250px;
+    height: auto;
+    margin: auto auto auto 5%;
+    text-decoration-line: none;
+    padding: 19px;
+    background: #0A3871;
+    color:white; 
+}
+#botones-iniciar-juego{
+    display: none;
+}
+#boton-nuevojuego{
+    font-size: larger;
+    text-decoration-line: none;
+    border-radius: 20px;
+    bottom: 230px;
+    width: 250px;
+    height: auto;
+    margin: auto;
+    padding: 19px 0;
+    background: #0A3871;
+    color:white; 
+}
+#boton-desistir{
+    font-size: larger;
+    text-decoration-line: none;
+    border-radius: 20px;
+    bottom: 230px;
+    width: 250px;
+    height: auto;
+    margin: auto;
+    padding: 19px 0;
+    background: #0A3871;
+    color:white; 
+}
+.panel{
+    margin: auto;
+    width: 100%;
+    display: none;
+}
+.text-area{
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius: nullpx;
+    font-weight: 400px;
+    font-size: 25px;
+    color: #0A3871;
+    border:none;
+    outline: none;
+    resize: none;
+    background:none;
+}
+.caja{
+    width: auto;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+#signoexclamacion{
+    margin: auto;
+}
+#textoinformativo{
+    float: left;
+    margin-left: 130px;
+    margin-bottom: 10px;
+}
+.buttons{
+    display: flex;
+    flex: 40%;
+    justify-content: space-between;
+    text-align: center;
+}
+#boton-guardar{
+    font-size: larger;
+    text-decoration-line: none;
+    border-radius: 20px;
+    bottom: 230px;
+    width: 250px;
+    height: auto;
+    margin: auto;
+    padding: 19px 0;
+    background: #0A3871;
+    color:white; 
+}
+#boton-cancelar{
+    font-size: larger;
+    text-decoration-line: none;
+    border-radius: 20px;
+    bottom: 230px;
+    width: 250px;
+    height: auto;
+    margin: auto;
+    padding: 19px 0;
+    background: #0A3871;
+    color:white; 
+}
+.container-footer{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*responsive
+logo position: static;*/
+@media (max-width: 768px) {
+
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+    .container{
+        width: auto;
+        height: 90%;
+    }
+    .logo{
+        position: static;
+        width: auto;
+        flex: auto;
+        flex-direction: row;
+        justify-content: left;
+    }
+    #logoAlura{
+        margin-top: 5px;
+    }
+    #titulo{
+        margin: 15px;
+        text-align: center;
+    }
+    .buttons{
+        margin:auto;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    #boton-iniciarjuego {
+        margin: auto;
+
+    }
+    #boton-agregarpalabra{
+        margin: auto;
+    }
+    #horca {
+        width: 100%;
+    }
+}
